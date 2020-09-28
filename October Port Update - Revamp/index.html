@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Brian <span class="w3-hide-small">McPherson</span></span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>I love software development</em></p>
+  <p>My name is Brian and I create websites and web applications. I live near Charleston, SC but I call many places home. I have been studying Web Development & Design for over a year, and I am completely self taught. I am proficent in many languages and technologies, including HTML, CSS, JavaScript, and many more. A full list of my skills can be found below.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Brian McPherson</b></p><br>
+      <img src="img/120352329_3477684635625713_2095922829877454415_o.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Outside of programming, I enjoy many things. I have always enjoyed fishing, as well as any type of sporting event. My favorite sport is Baseball, and I love the New York Mets.I am also a big college football fan, and I love the University of South Carolina. Go Gamecocks!</p>
+      <p>If I'm not coding or watching sports, then you'll probably find me watching horror movies. I'm also a huge cinema fan, and my favorite filmmaker of all time is Alfred Hitchcock.</p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+  <p class="w3-wide">HTML</p>
+  <p class="w3-wide">CSS</p>
+  <p class="w3-wide">JavaScript</p>
+  <p class="w3-wide">React</p>  
+  <h5 class="w3-center">I also have experience with :</h5>
+  <p class="w3-wide">PHP</p>
+  <p class="w3-wide">SQL</p>
+  <p class="w3-wide">Git</p>
+  <p class="w3-wide">GitHub</p>
+  <p class="w3-wide">Node</p>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">1+</span><br>
+    Years
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">25+</span><br>
+    Projects Done
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">30+</span><br>
+    Happy Clients
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">1,000+</span><br>
+    Cups of Coffee
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">MY WORK</h3>
+  <p class="w3-center"><em>Here are a few of my most recent projects<br> Click the images for more information</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="img/boat_wash.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Website for boatwashing company">
+      <p>This is a mockup for a boat-cleaning business. Originally created to practice my CSS, it turned into a full website.</p>      
+      <a href="https://clarendonboatwash.netlify.app/" target="_blank">Live Demo</a>
+      <hr>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="img/old portfolio.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="An older version of my portfolio">
+      <p>My old portfolio site. I liked this design, and may revert back to it one day, but for now I'm using the current design you're seeing.</p>
+      <a target='_blank' href="https://elastic-booth-eb395f.netlify.app/">Live Demo</a>      
+      <hr>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="img/carpetbagger-site.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Custom website for a youtuber">
+      <p>A simple website that was created for a youtuber I watch.</p>      
+      <a target='_blank' href="https://carpetbagger.netlify.app/">Live Demo</a>
+      <hr>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="img/rick-morty.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A rick and morty character viewer">
+      <p>A simple application that allows a user to search for a name, and see results for that character. All data is pulled from the Rick and Morty API.</p>      
+      <a target='_blank' href="https://wubbalubbadubdub.netlify.app/">Live Demo</a>
+      <hr>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="img/pokedex.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Simple Pokemon Game">
+      <p>A very simple game based on Pokemon. It randomly deals 2 hands, adds the experience up for each hand, and then shows  which hand won, and which hand lost. Built on React.</p>
+      <a href="https://csb-65oz3.netlify.app/" target="_blank">Live Demo</a>
+      <hr>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="img/health.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="UI for a fitness application">
+      <p>A UI for a fitness or health application. Created to practice CSS backgrounds and their behaviors.</p>
+      <a href="https://cdpn.io/bmac3032/debug/wvKxKvg/ZoABazDQdxBr" target="_blank">Live Demo</a>
+      <hr>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="img/nascar.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Nascar playoff standings">
+      <p>A simple site that displays the top 10 NASCAR drivers and their season stats. I am in the process of converting this to a single-page react application, so the demo linked is not completed</p>
+      <a href="https://nascardirectory.netlify.app/" target="_blank">Live Demo</a>
+      <hr>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="img/cardinal.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+      <p>A website created for a concrete company. The website is a WordPress website, but it has custom CSS and JavaScript to help give it personality.</p>
+      <a href="https://www.cardinalconcretecoatings.com/" target="_blank">Live Site</a>
+      <hr>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">WHERE I WORK</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=charleston+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Charleston, SC<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 1-(803)-410-0303<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: <a href="mailto:mcpherson.media.1@gmail.com">mcpherson.media.1@gmail.com</a><br>
+      </div>
+      <p>Leave me a message: </p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-30 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">    
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <div class="w3-section">
+    <p>mcpherson-media | Copyright 2020</p>
+  </div>
+  
+</footer>
+<script src="index.js"></script>
+</body>
+</html>
